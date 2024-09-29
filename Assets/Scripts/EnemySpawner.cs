@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class EnemySpawner : MonoBehaviour
+{
+    public int enemyCount = 1;
+    public GameObject enemy;
+    public float minDistance = 0f;
+    public float maxDistance = 20f;
+    public int currentEnemies = 0;
+
+    void Start()
+    {
+        SpawnEnemies();
+    }
+
+    void SpawnEnemies()
+    {
+        for (int i = 0; i < enemyCount; i++)
+        {
+            GameObject currentEnemy = Instantiate(enemy);
+            currentEnemies++;
+            currentEnemy.transform.position = Vector3.zero;
+            while (currentEnemy.transform.position == Vector3.zero)
+            {
+                currentEnemy.transform.position = GenerateSpawnPosition();
+            }
+        }
+    }
+
+    private Vector3 GenerateSpawnPosition()
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * Random.Range(minDistance, maxDistance);
+        randomDirection += transform.position;
+        UnityEngine.AI.NavMeshHit navMeshHit;
+        if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out navMeshHit, maxDistance, UnityEngine.AI.NavMesh.AllAreas))
+        {
+            return navMeshHit.position;
+        }
+        return Vector3.zero;
+    }
+}
