@@ -431,6 +431,7 @@
 "Assets/Scripts/Slot.cs"
 "Assets/Scripts/SwordDamage.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Scripts/WayPoint.cs"
 "Assets/Tent_CR_MAX_550/Scripts/CameraRig.cs"
 "Assets/Tent_CR_MAX_550/Scripts/PlayMove.cs"
 "Assets/VarcanRex/LongSword/Scripts/SimpleRotate.cs"

@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3c3e1573-a68b-562b-4e5f-e5ffb905bf81": {
+      "ProjectGuid": "3c3e1573-a68b-562b-4e5f-e5ffb905bf81",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "42937d37-d835-ab4c-f8c2-06be9a30f08d": {
+      "ProjectGuid": "42937d37-d835-ab4c-f8c2-06be9a30f08d",
+      "DisplayName": "NavMeshComponentsEditor",
+      "ColorIndex": 1
+    },
+    "e8ac5ade-4bf5-6e00-3bd0-bddc22ace25a": {
+      "ProjectGuid": "e8ac5ade-4bf5-6e00-3bd0-bddc22ace25a",
+      "DisplayName": "NavMeshComponents",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
