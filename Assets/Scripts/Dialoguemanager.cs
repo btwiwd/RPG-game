@@ -57,8 +57,6 @@ public class Dialoguemanager : MonoBehaviour
                 ReplicNumber = 1;
                 NextReplicButton.enabled = true;
                 QuestAccepted = true;
-                Waypoint.SetActive(true);
-                Waypoint.GetComponent<WayPoint>().target = QuestTarget.transform;
             }
             if (WaitingForQuest)
             {
@@ -146,11 +144,16 @@ public class Dialoguemanager : MonoBehaviour
             GameObject.Find("Player").GetComponent<Player>().Coin += 50;
             NPCEnabled = false;
             CurrentNPC.transform.GetChild(0).GetChild(0).GetComponent<Image>().enabled = false;
+            Waypoint.SetActive(false);
+            Camera.main.gameObject.GetComponent<WayPoint>().QuestTaken = true;
         }
         else
         {
             QuestAccepted = true;
             CurrentNPC.transform.GetChild(0).GetChild(0).GetComponent<Image>().color = ActiveQuest;
+            Waypoint.SetActive(true);
+            Camera.main.gameObject.GetComponent<WayPoint>().target = QuestTarget.transform;
+            Camera.main.gameObject.GetComponent<WayPoint>().QuestTaken = true;
         }
     }
     public void CancelQuest()

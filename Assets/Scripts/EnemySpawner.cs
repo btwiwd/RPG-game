@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -10,10 +11,27 @@ public class EnemySpawner : MonoBehaviour
     public float minDistance = 0f;
     public float maxDistance = 20f;
     public int currentEnemies = 0;
+    public Image Marker;
+    public GameObject player;
 
     void Start()
     {
         SpawnEnemies();
+        Marker = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Image>();
+        Marker.enabled = false;
+        player = GameObject.Find("Player");
+    }
+
+    void Update()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position)< 20)
+        {
+            Marker.enabled = true;
+        }
+        else
+        {
+            Marker.enabled = false;
+        }
     }
 
     void SpawnEnemies()
