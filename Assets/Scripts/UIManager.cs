@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     public Text healthTxT;
     public GameObject Inventory;
     public GameObject WhenBuyText;
-    public Shop shop;
+    public ShopController shop;
     public Player player;
     public Inventory inv;
     public GameObject Equipment;
@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
         healthTxT = GameObject.Find("Hud/hp").GetComponent<Text>();
         Equipment = GameObject.Find("Hud/PlayerStats");
         player = GameObject.Find("Player").GetComponent<Player>();
-        shop = GameObject.Find("Hud/Shop").GetComponent<Shop>();
+        shop = GameObject.Find("Hud").GetComponent<ShopController>();
         WhenBuyText = GameObject.Find("Hud/Shop/WhenBuy");
         WhenBuyText.GetComponent<FadeText>().enabled = false;
         WhenBuyText.GetComponent<Text>().enabled = false;
@@ -73,9 +73,10 @@ public class UIManager : MonoBehaviour
         }
         if (EnemiesKilled == 5)
         {
-           QuestList.transform.GetChild(0).gameObject.GetComponent<Text>().text = DialogueData.QuestName +"\n"+ DialogueData.QuestTask[1];
-           QuestEnded = true;
-           DM.CurrentNPC.transform.GetChild(0).GetChild(0).GetComponent<Image>().color = DM.UnActiveQuest;
+            QuestList.transform.GetChild(0).gameObject.GetComponent<Text>().text = DialogueData.QuestName +"\n"+ DialogueData.QuestTask[1];
+            QuestEnded = true;
+            DM.CurrentNPC.transform.GetChild(0).GetChild(0).GetComponent<Image>().color = DM.UnActiveQuest;
+            Camera.main.gameObject.GetComponent<WayPoint>().target = DM.CurrentNPC.transform;
         }
         if (Input.GetKeyDown(KeyCode.I)&&!Inventory.activeInHierarchy)
         {
@@ -95,14 +96,14 @@ public class UIManager : MonoBehaviour
     public void WhenBuy()
     {
         WhenBuyText.GetComponent<FadeText>().enabled = true;
-        if (player.Coin < shop.Pool.ItemPrices[shop.ActiveID])
+        if (player.Coin < shop.CurrentShop.Pool.ItemPrices[shop.ActiveID])
         {
-            WhenBuyText.GetComponent<Text>().text = "You have not enought money! You need"+  (shop.Pool.ItemPrices[shop.ActiveID] - player.Coin).ToString() + " coins";
+            WhenBuyText.GetComponent<Text>().text = "You have not enought money! You need"+  (shop.CurrentShop.Pool.ItemPrices[shop.ActiveID] - player.Coin).ToString() + " coins";
         }
         else
         {
             WhenBuyText.GetComponent<Text>().text = "You succesfully bought an item";
-            player.Coin -= shop.Pool.ItemPrices[shop.ActiveID];
+            player.Coin -= shop.CurrentShop.Pool.ItemPrices[shop.ActiveID];
             bool IsInInventory = false;
             for(int i = 0; i < inv.InventorySlots.Count; i++)
             {
@@ -121,7 +122,7 @@ public class UIManager : MonoBehaviour
                     {
                         inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID = shop.ActiveID;
                         inv.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                        inv.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = inv.SP.ItemList[inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID];
+                        inv.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = inv.SP.ItemSprites[inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID];
                         inv.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
                         break;
                     }
@@ -131,9 +132,9 @@ public class UIManager : MonoBehaviour
             {
                 if (shop.ShopSlots[i].GetComponent<Slot>().ItemID == shop.ActiveID)
                 {
-                    shop.ShopItemQuantitis[i]--;
-                    shop.ShopSlots[i].transform.GetChild(2).GetComponent<Text>().text = shop.ShopItemQuantitis[i].ToString();
-                    if (shop.ShopItemQuantitis[i] <= 0)
+                    shop.CurrentShop.CurrentShop[i].ItemCount--;
+                    shop.ShopSlots[i].transform.GetChild(2).GetComponent<Text>().text = shop.CurrentShop.CurrentShop[i].ItemCount.ToString();
+                    if (shop.CurrentShop.CurrentShop[i].ItemCount <= 0)
                     {
                         shop.ShopSlots[i].transform.GetChild(0).GetComponent<Image>().color = shop.ShopSlots[i].GetComponent<Slot>().UnActiveColor;
                         shop.ActiveID = -1;

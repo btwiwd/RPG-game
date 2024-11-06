@@ -12,7 +12,6 @@ public class QuickSlotManager : MonoBehaviour
     {
         Keys = new()
         {
-            KeyCode.Alpha0,
             KeyCode.Alpha1,
             KeyCode.Alpha2,
             KeyCode.Alpha3,
@@ -22,6 +21,7 @@ public class QuickSlotManager : MonoBehaviour
             KeyCode.Alpha7,
             KeyCode.Alpha8,
             KeyCode.Alpha9,
+            KeyCode.Alpha0,
         };
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -35,7 +35,7 @@ public class QuickSlotManager : MonoBehaviour
         {
             if (Input.GetKeyDown(Keys[i]))
             {
-                Debug.Log(i);
+                Debug.Log(slots[i].name);
             }
         }
     }

@@ -9269,6 +9269,7 @@ MonoBehaviour:
   minDistance: 0
   maxDistance: 20
   destinationPoint: {x: 0, y: 0, z: 0}
+  AttackCollider: {fileID: 601172125783060686}
 --- !u!65 &601172125792538439
 BoxCollider:
   m_ObjectHideFlags: 0

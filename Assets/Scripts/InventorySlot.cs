@@ -62,7 +62,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             {
                 ItemCount++;
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
-                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemList[ItemID];
+                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemSprites[ItemID];
                 transform.GetChild(1).gameObject.SetActive(true);
             }
             else if (ActiveSlot.GetComponent<MoveItem>().ItemID == ItemID)

@@ -22,8 +22,11 @@ public class Dialoguemanager : MonoBehaviour
     public GameObject CurrentNPC;
     public GameObject QuestTarget;
     public GameObject Waypoint;
+    public ShopController ShopC;
+    public ShopGenerator CurrentNPCshop;
     void Start()
     {
+        ShopC = GameObject.Find("Hud").GetComponent<ShopController>();
         Waypoint = GameObject.Find("Hud/WayPoint");
         Waypoint.SetActive(false);
         QuestTarget = GameObject.Find("Spawner");
@@ -77,6 +80,7 @@ public class Dialoguemanager : MonoBehaviour
          else if (CurrentNPCname == "Trader")
          {
             Shop.SetActive(true);
+            ShopC.ShowShop(CurrentNPCshop);
             DialogueField.enabled = false;
             ActiveDialogue.enabled = false;
          }
@@ -101,6 +105,7 @@ public class Dialoguemanager : MonoBehaviour
             {
                 ActiveDialogue.enabled = false;
                 ReadyToDialogue = false;
+                CurrentNPCshop = null;
             }
     }
     public void OnTriggerEnter(Collider col)
@@ -117,6 +122,7 @@ public class Dialoguemanager : MonoBehaviour
                 ActiveDialogue.enabled = true;
                  ReadyToDialogue = true;
                  CurrentNPCname = "Trader";
+                 CurrentNPCshop = col.gameObject.GetComponent<ShopGenerator>();
             } 
     }
     public void NextReplic()
@@ -171,13 +177,13 @@ public class Dialoguemanager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             DialogueField.enabled = false;
             GameObject.Find("Hud").GetComponent<UIManager>().Buttons.SetActive(false);
-            for(int i = 0; i < Shop.GetComponent<Shop>().ItemCount; i++)
+            for(int i = 0; i < Shop.GetComponent<ShopItemsPool>().CurrentItemsCount; i++)
             {
-                Shop.GetComponent<Shop>().ShopSlots[i].GetComponent<Slot>().DeactivateSlot();
+                ShopC.ShopSlots[i].GetComponent<Slot>().DeactivateSlot();
             }
-            Shop.GetComponent<Shop>().ActiveSlot = null;
-            Shop.GetComponent<Shop>().PreviousActiveSlot = null;
-            Shop.GetComponent<Shop>().ActiveID = -1;
+            ShopC.ActiveSlot = null;
+            ShopC.PreviousActiveSlot = null;
+            ShopC.ActiveID = -1;
             Shop.SetActive(false);
     }
 }

@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     public float minDistance = 0f;
     public float maxDistance = 20f;
     public Vector3 destinationPoint;
+    public Collider AttackCollider;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -177,6 +178,7 @@ public class Enemy : MonoBehaviour
         if (hp <= 0 && !isDead)
         {
             GetComponent<BoxCollider>().isTrigger = false;
+            AttackCollider.enabled = false;
             isDead = true;
             agent.velocity = Vector3.zero;
             agent.isStopped = true;

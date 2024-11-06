@@ -1,0 +1,695 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.24f1 (11fa355cd605) revision 1178165'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ru' Physical Memory: 16121 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity Hub\6000.0.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/User/Documents/3D game
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50108
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/User/Documents/3D game
+C:/Users/User/Documents/3D game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13540]  Target information:
+
+Player connection [13540]  * "[IP] 192.168.31.119 [Port] 0 [Flags] 2 [Guid] 2608853741 [EditorId] 2608853741 [Version] 1048832 [Id] WindowsEditor(7,Asus) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [13540] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13540] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 5.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.24f1 (11fa355cd605)
+[Subsystems] Discovering subsystems at path D:/Unity Hub/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/3D game/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   32.0.15.6590
+Initialize mono
+Mono path[0] = 'D:/Unity Hub/6000.0.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Hub/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity Hub/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Hub/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001477 seconds.
+- Loaded All Assemblies, in  0.537 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.494 seconds
+Domain Reload Profiling: 1030ms
+	BeginReloadAssembly (219ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (197ms)
+		LoadAssemblies (218ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (190ms)
+				TypeCache.ScanAssembly (171ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (495ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (445ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.282 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.861 seconds
+Domain Reload Profiling: 2143ms
+	BeginReloadAssembly (637ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (106ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (466ms)
+		LoadAssemblies (437ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (125ms)
+			BuildScriptInfoCaches (37ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (862ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (579ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (492ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3325 unused Assets / (1.6 MB). Loaded Objects now: 3969.
+Memory consumption went from 142.9 MB to 141.3 MB.
+Total: 8.713200 ms (FindLiveObjects: 0.504800 ms CreateObjectMapping: 0.550400 ms MarkObjects: 6.012300 ms  DeleteObjects: 1.643500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 928.742020 seconds.
+  path: Assets/Scripts/Без названия (4).jpg
+  artifactKey: Guid(af34cbd1d34255f4d9782519edf92cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Без названия (4).jpg using Guid(af34cbd1d34255f4d9782519edf92cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bff3191ef0e49c4297a826cb9f5b8739') in 0.1433027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.5 MB.
+Total: 7.545500 ms (FindLiveObjects: 0.491400 ms CreateObjectMapping: 0.500000 ms MarkObjects: 5.023600 ms  DeleteObjects: 1.529000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 133.665850 seconds.
+  path: Assets/Scripts/ShopItem.cs
+  artifactKey: Guid(f14a01bcf99d1f4418d29e99101b0781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopItem.cs using Guid(f14a01bcf99d1f4418d29e99101b0781) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcc5e42ad7a29de73792dd2989850530') in 0.0047263 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 8.294800 ms (FindLiveObjects: 0.393700 ms CreateObjectMapping: 0.284500 ms MarkObjects: 6.243700 ms  DeleteObjects: 1.371400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 8.812100 ms (FindLiveObjects: 0.662600 ms CreateObjectMapping: 0.773900 ms MarkObjects: 6.050400 ms  DeleteObjects: 1.323600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 12.480000 ms (FindLiveObjects: 0.643600 ms CreateObjectMapping: 0.840500 ms MarkObjects: 8.226300 ms  DeleteObjects: 2.767700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 8.343400 ms (FindLiveObjects: 0.532200 ms CreateObjectMapping: 0.330500 ms MarkObjects: 5.908500 ms  DeleteObjects: 1.569600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.9 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.1 MB.
+Total: 9.144900 ms (FindLiveObjects: 0.483100 ms CreateObjectMapping: 0.308100 ms MarkObjects: 6.550300 ms  DeleteObjects: 1.801200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 9.927000 ms (FindLiveObjects: 0.407300 ms CreateObjectMapping: 0.325400 ms MarkObjects: 7.133100 ms  DeleteObjects: 2.059500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (0.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 131.4 MB.
+Total: 31.693100 ms (FindLiveObjects: 1.672800 ms CreateObjectMapping: 2.069400 ms MarkObjects: 24.025400 ms  DeleteObjects: 3.923200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 858.005295 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.044798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.8 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.2 MB.
+Total: 8.451400 ms (FindLiveObjects: 0.594800 ms CreateObjectMapping: 0.712000 ms MarkObjects: 5.118800 ms  DeleteObjects: 2.023900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 46.369109 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0094091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.5 MB.
+Total: 14.398400 ms (FindLiveObjects: 0.951900 ms CreateObjectMapping: 1.342500 ms MarkObjects: 10.088600 ms  DeleteObjects: 2.012100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.781775 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0055705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.5 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.5 MB.
+Total: 12.333200 ms (FindLiveObjects: 0.745300 ms CreateObjectMapping: 0.708400 ms MarkObjects: 5.611200 ms  DeleteObjects: 5.265400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.930194 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.006137 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 7.726800 ms (FindLiveObjects: 0.583000 ms CreateObjectMapping: 0.498000 ms MarkObjects: 5.134100 ms  DeleteObjects: 1.510300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 8.109900 ms (FindLiveObjects: 0.440400 ms CreateObjectMapping: 0.290000 ms MarkObjects: 5.262400 ms  DeleteObjects: 2.115100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 7.660200 ms (FindLiveObjects: 0.464100 ms CreateObjectMapping: 0.288800 ms MarkObjects: 5.529000 ms  DeleteObjects: 1.376600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 9.669200 ms (FindLiveObjects: 0.701400 ms CreateObjectMapping: 0.884800 ms MarkObjects: 6.078800 ms  DeleteObjects: 2.001100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.9 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.1 MB.
+Total: 9.785600 ms (FindLiveObjects: 0.961100 ms CreateObjectMapping: 0.472800 ms MarkObjects: 5.865600 ms  DeleteObjects: 2.484000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 150.908986 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0209388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.9 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.1 MB.
+Total: 7.979400 ms (FindLiveObjects: 0.495400 ms CreateObjectMapping: 0.345200 ms MarkObjects: 5.407200 ms  DeleteObjects: 1.729900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.883719 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0038358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 10.818000 ms (FindLiveObjects: 1.371300 ms CreateObjectMapping: 0.759200 ms MarkObjects: 6.647500 ms  DeleteObjects: 2.037100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.947312 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0049586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 8.066700 ms (FindLiveObjects: 0.418600 ms CreateObjectMapping: 0.431300 ms MarkObjects: 5.430700 ms  DeleteObjects: 1.784400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.057339 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0062284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.2 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.8 MB.
+Total: 12.788100 ms (FindLiveObjects: 0.868100 ms CreateObjectMapping: 0.539000 ms MarkObjects: 8.903900 ms  DeleteObjects: 2.473700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 21.771472 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0047093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 8.234200 ms (FindLiveObjects: 0.564700 ms CreateObjectMapping: 0.347100 ms MarkObjects: 5.486000 ms  DeleteObjects: 1.834700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 50.933348 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0039906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (2.1 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 129.9 MB.
+Total: 10.191800 ms (FindLiveObjects: 0.485100 ms CreateObjectMapping: 0.291500 ms MarkObjects: 6.596800 ms  DeleteObjects: 2.816800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 7.350800 ms (FindLiveObjects: 0.555800 ms CreateObjectMapping: 0.324200 ms MarkObjects: 4.627800 ms  DeleteObjects: 1.841200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 7.317400 ms (FindLiveObjects: 0.422400 ms CreateObjectMapping: 0.362400 ms MarkObjects: 4.854600 ms  DeleteObjects: 1.676600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 91.358343 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0138998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 9.819300 ms (FindLiveObjects: 0.477400 ms CreateObjectMapping: 0.305200 ms MarkObjects: 6.795100 ms  DeleteObjects: 2.239000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.082612 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0051963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.6 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.4 MB.
+Total: 9.718200 ms (FindLiveObjects: 0.701300 ms CreateObjectMapping: 0.315700 ms MarkObjects: 7.217400 ms  DeleteObjects: 1.482100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.882237 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.0041423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 10.077300 ms (FindLiveObjects: 2.053300 ms CreateObjectMapping: 1.079500 ms MarkObjects: 5.489600 ms  DeleteObjects: 1.452700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 34.070435 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d074bb34710e685ec5e906288a3cf0d') in 0.003816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3318 unused Assets / (1.7 MB). Loaded Objects now: 3978.
+Memory consumption went from 132.0 MB to 130.3 MB.
+Total: 10.695000 ms (FindLiveObjects: 1.052600 ms CreateObjectMapping: 0.872500 ms MarkObjects: 6.404200 ms  DeleteObjects: 2.363700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.616 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.773 seconds
+Domain Reload Profiling: 1391ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (331ms)
+		LoadAssemblies (286ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (123ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (774ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (501ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (406ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3324 unused Assets / (1.5 MB). Loaded Objects now: 3977.
+Memory consumption went from 133.3 MB to 131.8 MB.
+Total: 6.571400 ms (FindLiveObjects: 0.399700 ms CreateObjectMapping: 0.269800 ms MarkObjects: 4.472300 ms  DeleteObjects: 1.428400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 97.476255 seconds.
+  path: Assets/Scripts/ShopController.cs
+  artifactKey: Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ShopController.cs using Guid(ea8cbbd431e2fa0428fb080318bbd27f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fed2a26e89c8530580d1b56dc73d376c') in 0.006483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.582 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.725 seconds
+Domain Reload Profiling: 1309ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (289ms)
+		LoadAssemblies (277ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (105ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (726ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (429ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (352ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3324 unused Assets / (1.6 MB). Loaded Objects now: 3977.
+Memory consumption went from 133.3 MB to 131.7 MB.
+Total: 5.958200 ms (FindLiveObjects: 0.375800 ms CreateObjectMapping: 0.246200 ms MarkObjects: 4.039900 ms  DeleteObjects: 1.294900 ms)
+
+Prepare: number of updated asset objects reloaded= 0

@@ -13,6 +13,7 @@ public class EnemySpawner : MonoBehaviour
     public int currentEnemies = 0;
     public Image Marker;
     public GameObject player;
+    public GameObject waypoint;
 
     void Start()
     {
@@ -20,18 +21,25 @@ public class EnemySpawner : MonoBehaviour
         Marker = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Image>();
         Marker.enabled = false;
         player = GameObject.Find("Player");
+        waypoint = GameObject.Find("Hud/WayPoint");
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position)< 20)
+        if (Camera.main.gameObject.GetComponent<WayPoint>().QuestTaken)
         {
-            Marker.enabled = true;
+           if (Vector3.Distance(transform.position, player.transform.position)< 20)
+            {
+                Marker.enabled = true;
+                waypoint.SetActive(false);
+            }
+            else
+            {
+                Marker.enabled = false;
+                waypoint.SetActive(true);
+            } 
         }
-        else
-        {
-            Marker.enabled = false;
-        }
+        
     }
 
     void SpawnEnemies()

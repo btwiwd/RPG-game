@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class ShopItemsPool : MonoBehaviour
 {
-    public List<Sprite> ItemList;
+    public List<Sprite> ItemSprites;
+    public List<Sprite> PotionSprites;
     public List<int> ItemPrices;
     public List<int> ItemsArmor;
-    public List<string> ShopItemNames;
+    public List<int> PotionPrices;
+    public List<string> ItemNames;
+    public List<string> PotionNames;
+    public int CurrentItemsCount;
     public bool ISHelmet(int ID)
     {
         return ID >= 60 && ID <= 69? true : false;

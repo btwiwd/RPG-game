@@ -9,11 +9,11 @@ public class Slot : MonoBehaviour
     public Color UnActiveColor;
     public bool FirstClick = true;
     public int ItemID = -1;
-    public Shop shop;
+    public ShopController shop;
 
     void Start()
     {
-        shop = GameObject.Find("Hud/Shop").GetComponent<Shop>();
+        shop = GameObject.Find("Hud/Shop").GetComponent<ShopController>();
     }
     public void Click()
     {

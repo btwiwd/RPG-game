@@ -42,7 +42,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             {
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
                 player.Armor += SIP.ItemsArmor[ItemID];
-                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemList[ItemID];
+                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemSprites[ItemID];
                 transform.GetChild(1).gameObject.SetActive(true);
                 if (bag.InventorySlots[SlotNumber].GetComponent<InventorySlot>().ItemID == ItemID)
                 {
@@ -79,7 +79,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                             {
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemID = oldID;
                                 bag.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = bag.SP.ItemList[oldID];
+                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = bag.SP.ItemSprites[oldID];
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
                                 break;
                             }
@@ -94,7 +94,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         if (ItemID != -1)
         {
             Description = Instantiate(Inventory.Description, transform.position - new Vector3(82, 0, 0), transform.rotation, transform);
-            Description.transform.GetChild(0).GetComponent<Text>().text = SIP.ShopItemNames[ItemID];
+            Description.transform.GetChild(0).GetComponent<Text>().text = SIP.ItemNames[ItemID];
             Description.transform.GetChild(1).GetComponent<Text>().text = "Armor: " + SIP.ItemsArmor[ItemID].ToString();
             Active = true;
             StartCoroutine(MoveItem());
