@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ShopItemsPool : MonoBehaviour
 {
-    public List<Sprite> ItemSprites;
-    public List<Sprite> PotionSprites;
     public List<int> ItemPrices;
     public List<int> ItemsArmor;
     public List<int> PotionPrices;

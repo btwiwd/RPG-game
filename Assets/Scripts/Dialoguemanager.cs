@@ -122,7 +122,7 @@ public class Dialoguemanager : MonoBehaviour
                 ActiveDialogue.enabled = true;
                  ReadyToDialogue = true;
                  CurrentNPCname = "Trader";
-                 CurrentNPCshop = col.gameObject.GetComponent<ShopGenerator>();
+                 CurrentNPCshop = col.gameObject.transform.parent.GetComponent<ShopGenerator>();
             } 
     }
     public void NextReplic()

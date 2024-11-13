@@ -53,6 +53,7 @@ public class ShopController : MonoBehaviour
     public void ShowShop(ShopGenerator S)
     {
         CurrentShop = S;
+        Debug.Log(S.CurrentShop);
         for( int i = 0; i < S.CurrentShop.Count; i++)
         {
             ShopSlots[i].GetComponent<Slot>().ItemID = S.CurrentShop[i].ItemID;
