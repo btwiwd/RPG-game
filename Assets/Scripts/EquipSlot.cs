@@ -15,9 +15,11 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public Inventory bag;
     public bool Active;
     public Player player;
+    public ShopController Sc;
 
     void Awake()
     {
+        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
         player = GameObject.Find("Player").GetComponent<Player>();
         bag = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
         Inventory = GameObject.Find("Hud/PlayerStats").GetComponent<EquipmentInventory>();
@@ -42,7 +44,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             {
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
                 player.Armor += SIP.ItemsArmor[ItemID];
-                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemSprites[ItemID];
+                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(SIP.ItemNames[ItemID]);
                 transform.GetChild(1).gameObject.SetActive(true);
                 if (bag.InventorySlots[SlotNumber].GetComponent<InventorySlot>().ItemID == ItemID)
                 {
@@ -79,7 +81,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                             {
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemID = oldID;
                                 bag.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = bag.SP.ItemSprites[oldID];
+                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = Sc.LoadImage(bag.SP.ItemNames[oldID]);
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
                                 break;
                             }

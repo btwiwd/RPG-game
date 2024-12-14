@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     public Text Armor;
     public Slider hpSlider;
     public Dialoguemanager DM;
+    public ShopController Sc;
 
     private void Awake()
     {
@@ -26,7 +27,8 @@ public class UIManager : MonoBehaviour
        Armor = GameObject.Find("Hud/PlayerStats/Armor").GetComponent<Text>();
     }
     void Start()
-    { 
+    {
+        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
         DM = GameObject.Find("Player").GetComponent<Dialoguemanager>();
         hpSlider = GameObject.Find("Hud/hp/Slider").GetComponent<Slider>();
         healthTxT = GameObject.Find("Hud/hp").GetComponent<Text>();
@@ -122,7 +124,7 @@ public class UIManager : MonoBehaviour
                     {
                         inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID = shop.ActiveID;
                         inv.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                        inv.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = inv.SP.ItemSprites[inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID];
+                        inv.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = Sc.LoadImage(inv.SP.ItemNames[inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID]);
                         inv.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
                         break;
                     }

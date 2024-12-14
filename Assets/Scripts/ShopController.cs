@@ -53,14 +53,18 @@ public class ShopController : MonoBehaviour
     public void ShowShop(ShopGenerator S)
     {
         CurrentShop = S;
-        Debug.Log(S.CurrentShop);
+        Debug.Log(S.CurrentShop.Count);      //“”Ú
         for( int i = 0; i < S.CurrentShop.Count; i++)
         {
             ShopSlots[i].GetComponent<Slot>().ItemID = S.CurrentShop[i].ItemID;
-            ShopSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = S.CurrentShop[i].ItemSprite;
+            ShopSlots[i].transform.GetChild(1).GetComponent<Image>().sprite = LoadImage(S.CurrentShop[i].ItemSpritePath);
             ShopSlots[i].transform.GetChild(2).GetComponent<Text>().text = S.CurrentShop[i].ItemCount.ToString();
             ShopSlots[i].transform.GetChild(3).GetComponent<Text>().text = S.CurrentShop[i].ItemPrice.ToString();
         }
         
+    }
+    public Sprite LoadImage(string name)
+    {
+        return Resources.Load<Sprite>($"ShopSprites/Icons/{name.Substring(0, name.IndexOf('_')) + 's'}/{name}");
     }
 }

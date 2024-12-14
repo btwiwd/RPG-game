@@ -15,6 +15,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public int itemCount = 0;
     public ShopItemsPool SIP;
     public Player player;
+    public ShopController Sc;
     public int ItemCount
     {
         get
@@ -37,6 +38,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     void Awake()
     {
+        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
         player = GameObject.Find("Player").GetComponent<Player>();
         SIP = GameObject.Find("Hud/Shop").GetComponent<ShopItemsPool>();
     }
@@ -62,7 +64,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             {
                 ItemCount++;
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
-                transform.GetChild(1).GetComponent<Image>().sprite = SIP.ItemSprites[ItemID];
+                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(SIP.ItemNames[ItemID]);
                 transform.GetChild(1).gameObject.SetActive(true);
             }
             else if (ActiveSlot.GetComponent<MoveItem>().ItemID == ItemID)

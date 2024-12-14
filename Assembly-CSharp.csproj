@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3C3E1573-A68B-562B-4E5F-E5FFB905BF81}</ProjectGuid>
+    <ProjectGuid>{E0CD8846-351C-1D82-D892-010764A2E23C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,47 +59,155 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Scripts\TDControl.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Scripts\Setting.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\Scripts\Healer.cs" />
     <Compile Include="Assets\Tent_CR_MAX_550\Scripts\PlayMove.cs" />
+    <Compile Include="Assets\Scripts\ShopItem.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Scripts\ShopItemsPool.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Scripts\DeathAnim.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
     <Compile Include="Assets\CaptainCatSparrow\ArmorAndJewelry\Scenes\Scripts\Demo.cs" />
+    <Compile Include="Assets\Scripts\ShopController.cs" />
+    <Compile Include="Assets\Scripts\WayPoint.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Tent_CR_MAX_550\Scripts\CameraRig.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\DynamicSkyForDemo.cs" />
     <Compile Include="Assets\Scripts\Fps.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\PlayerSword.cs" />
     <Compile Include="Assets\Scripts\MoveItem.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\#NVJOB Water Shaders V2\NVWaterShaders.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\Scripts\Info.cs" />
     <Compile Include="Assets\Scripts\KeyBoardManager.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\CaptainCatSparrow\ArmorAndJewelry\Scenes\Scripts\DragObject.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\VarcanRex\LongSword\Scripts\SimpleRotate.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Scripts\Lighthouse.cs" />
     <Compile Include="Assets\Scripts\EquipSlot.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\Scripts\EquipmentInventory.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\CaptainCatSparrow\ArmorAndJewelry\Scenes\Scripts\DropObject.cs" />
-    <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Scripts\ShopGenerator.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Scripts\FadeText.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Scripts\Dialoguemanager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Scripts\SwordDamage.cs" />
+    <Compile Include="Assets\Scripts\QuickSlotManager.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\DialogueData.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\#NVJOB Water Shaders V2\Water Specular.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Fonts\OFL.txt" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\#NVJOB Assets\Dynamic Sky (For Demo)\Dynamic Sky (For Demo).shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
     <None Include="Assets\Tent_CR_MAX_550\Model\BG_effect\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Palm Trees\Materials\Standard 2-Sided.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Tent_CR_MAX_550\Shader\Character\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\license_unity.txt" />
     <None Include="Assets\Orkassasin\Material\Standard_Two_Sided .shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\license_nvjob.txt" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Tent_CR_MAX_550\Shader\Character\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
     <None Include="Assets\Tent_CR_MAX_550\Shader\Character\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\TextMesh_Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Flag\Materials\Flag.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\Tent_CR_MAX_550\Shader\Bg\BG_Shader.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\#NVJOB Water Shaders V2\Water Surface.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Rainbow\Materials\No Fog.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\Necromanser\Stand\Standard_Two_Sided .shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\TAA.shader" />
     <None Include="Assets\Tent_CR_MAX_550\Shader\Character\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
-    <None Include="Assets\PBR Ground Materials #1 [Dirt&amp; Grass]\Documentation.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\PBRGroundMaterials#1\Documentation.txt" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\Fonts\README.txt" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\TextMesh_Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\#NVJOBWaterShadersV2\#NVJOB Water Shaders V2\NvWaters.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -431,7 +539,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -996,14 +1104,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{42937D37-D835-AB4C-F8C2-06BE9A30F08D}</Project>
-      <Name>NavMeshComponentsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{E8AC5ADE-4BF5-6E00-3BD0-BDDC22ACE25A}</Project>
-      <Name>NavMeshComponents</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

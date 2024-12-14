@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
                 Marker.enabled = false;
                 waypoint.SetActive(true);
             } 
-        }
+         }
         
     }
 
@@ -60,8 +60,8 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 randomDirection = Random.insideUnitSphere * Random.Range(minDistance, maxDistance);
         randomDirection += transform.position;
-        UnityEngine.AI.NavMeshHit navMeshHit;
-        if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out navMeshHit, maxDistance, UnityEngine.AI.NavMesh.AllAreas))
+        NavMeshHit navMeshHit;
+        if (NavMesh.SamplePosition(randomDirection, out navMeshHit, maxDistance, NavMesh.AllAreas))
         {
             return navMeshHit.position;
         }
