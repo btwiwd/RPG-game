@@ -26,7 +26,7 @@ public class Dialoguemanager : MonoBehaviour
     public ShopGenerator CurrentNPCshop;
     void Start()
     {
-        ShopC = GameObject.Find("Hud").GetComponent<ShopController>();
+        ShopC = GameObject.Find("Hud/Shop").GetComponent<ShopController>();
         Waypoint = GameObject.Find("Hud/WayPoint");
         Waypoint.SetActive(false);
         QuestTarget = GameObject.Find("Spawner");
@@ -177,10 +177,10 @@ public class Dialoguemanager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             DialogueField.enabled = false;
             GameObject.Find("Hud").GetComponent<UIManager>().Buttons.SetActive(false);
-            for(int i = 0; i < Shop.GetComponent<ShopItemsPool>().CurrentItemsCount; i++)
-            {
-                ShopC.ShopSlots[i].GetComponent<Slot>().DeactivateSlot();
-            }
+            //for(int i = 0; i < Shop.GetComponent<ShopItemsPool>().CurrentItemsCount; i++)
+            //{
+                //ShopC.ShopSlots[i].GetComponent<Slot>().DeactivateSlot();
+           // }
             ShopC.ActiveSlot = null;
             ShopC.PreviousActiveSlot = null;
             ShopC.ActiveID = -1;

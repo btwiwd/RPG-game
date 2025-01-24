@@ -13,7 +13,6 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public int ItemID = -1;
     public bool Active = false;
     public int itemCount = 0;
-    public ShopItemsPool SIP;
     public Player player;
     public ShopController Sc;
     public int ItemCount
@@ -40,12 +39,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         Sc = GameObject.Find("Hud").GetComponent<ShopController>();
         player = GameObject.Find("Player").GetComponent<Player>();
-        SIP = GameObject.Find("Hud/Shop").GetComponent<ShopItemsPool>();
-    }
-
-    void Start()
-    {
-        Inv = GameObject.Find("Hud").GetComponent<UIManager>().inv;
+        Inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
     }
     void Update()
     {
@@ -64,7 +58,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             {
                 ItemCount++;
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
-                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(SIP.ItemNames[ItemID]);
+                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(ShopItemsPool.ItemByID(ItemID).name);
                 transform.GetChild(1).gameObject.SetActive(true);
             }
             else if (ActiveSlot.GetComponent<MoveItem>().ItemID == ItemID)
@@ -75,7 +69,8 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             }
             if (ActiveSlot.GetComponent<MoveItem>().IsEquipment)
             {
-                player.Armor -= SIP.ItemsArmor[ItemID];
+                Armor a = (Armor)ShopItemsPool.ItemByID(ItemID);
+                player.Armor -= a.armor;
                 ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<EquipSlot>().ItemID = -1;
                 ActiveSlot.GetComponent<MoveItem>().ParentSlot.transform.GetChild(1).gameObject.SetActive(false);
             }

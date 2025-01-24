@@ -12,29 +12,23 @@ public class UIManager : MonoBehaviour
     public Text healthTxT;
     public GameObject Inventory;
     public GameObject WhenBuyText;
-    public ShopController shop;
     public Player player;
-    public Inventory inv;
     public GameObject Equipment;
     public Text Armor;
     public Slider hpSlider;
     public Dialoguemanager DM;
-    public ShopController Sc;
 
     private void Awake()
     {
-       inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
        Armor = GameObject.Find("Hud/PlayerStats/Armor").GetComponent<Text>();
     }
     void Start()
     {
-        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
         DM = GameObject.Find("Player").GetComponent<Dialoguemanager>();
         hpSlider = GameObject.Find("Hud/hp/Slider").GetComponent<Slider>();
         healthTxT = GameObject.Find("Hud/hp").GetComponent<Text>();
         Equipment = GameObject.Find("Hud/PlayerStats");
         player = GameObject.Find("Player").GetComponent<Player>();
-        shop = GameObject.Find("Hud").GetComponent<ShopController>();
         WhenBuyText = GameObject.Find("Hud/Shop/WhenBuy");
         WhenBuyText.GetComponent<FadeText>().enabled = false;
         WhenBuyText.GetComponent<Text>().enabled = false;
@@ -94,59 +88,6 @@ public class UIManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
-    }
-    public void WhenBuy()
-    {
-        WhenBuyText.GetComponent<FadeText>().enabled = true;
-        if (player.Coin < shop.CurrentShop.Pool.ItemPrices[shop.ActiveID])
-        {
-            WhenBuyText.GetComponent<Text>().text = "You have not enought money! You need"+  (shop.CurrentShop.Pool.ItemPrices[shop.ActiveID] - player.Coin).ToString() + " coins";
-        }
-        else
-        {
-            WhenBuyText.GetComponent<Text>().text = "You succesfully bought an item";
-            player.Coin -= shop.CurrentShop.Pool.ItemPrices[shop.ActiveID];
-            bool IsInInventory = false;
-            for(int i = 0; i < inv.InventorySlots.Count; i++)
-            {
-                if (inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID == shop.ActiveID)
-                {
-                    inv.InventorySlots[i].GetComponent<InventorySlot>().ItemCount++;
-                    IsInInventory = true;
-                    break;
-                }
-            }
-            if (!IsInInventory)
-            {
-                for(int i = 0; i < inv.InventorySlots.Count; i++)
-                {
-                    if (inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID == -1)
-                    {
-                        inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID = shop.ActiveID;
-                        inv.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                        inv.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = Sc.LoadImage(inv.SP.ItemNames[inv.InventorySlots[i].GetComponent<InventorySlot>().ItemID]);
-                        inv.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
-                        break;
-                    }
-                }
-            }
-            for (int i = 0; i < shop.ShopSlots.Count; i++)
-            {
-                if (shop.ShopSlots[i].GetComponent<Slot>().ItemID == shop.ActiveID)
-                {
-                    shop.CurrentShop.CurrentShop[i].ItemCount--;
-                    shop.ShopSlots[i].transform.GetChild(2).GetComponent<Text>().text = shop.CurrentShop.CurrentShop[i].ItemCount.ToString();
-                    if (shop.CurrentShop.CurrentShop[i].ItemCount <= 0)
-                    {
-                        shop.ShopSlots[i].transform.GetChild(0).GetComponent<Image>().color = shop.ShopSlots[i].GetComponent<Slot>().UnActiveColor;
-                        shop.ActiveID = -1;
-                        shop.ActiveSlot = null;
-                    }
-                    break;
-                }
-            }
-        }
-        WhenBuyText.GetComponent<FadeText>().Show = true;
     }
     public void ChangeArmor(int value)
     {

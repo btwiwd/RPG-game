@@ -3,14 +3,11 @@ using UnityEngine.UI;
 
 public class ShopItem
 {
-    public string ItemSpritePath;
-    public int ItemPrice;
     public int ItemCount;
-    public int ItemID;
-    public ShopItem(string ItemSpritePath, int ItemPrice, int ItemCount, int ItemID){
-        this.ItemSpritePath = ItemSpritePath;
-        this.ItemPrice = ItemPrice;
+    public Item item;
+    public ShopItem(int ItemCount, Item item){
         this.ItemCount = ItemCount;
-        this.ItemID = ItemID;
+        this.item = item;
+
     }
 }

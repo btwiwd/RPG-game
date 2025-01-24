@@ -8,7 +8,6 @@ using System;
 public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public int ItemID = -1;
-    public ShopItemsPool SIP;
     public GameObject Description;
     public EquipmentInventory Inventory;
     public int TypeID;
@@ -19,11 +18,10 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     void Awake()
     {
-        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
+        Sc = GameObject.Find("Hud/Shop").GetComponent<ShopController>();
         player = GameObject.Find("Player").GetComponent<Player>();
         bag = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
         Inventory = GameObject.Find("Hud/PlayerStats").GetComponent<EquipmentInventory>();
-        SIP = GameObject.Find("Hud/Shop").GetComponent<ShopItemsPool>();
     }
     void Update()
     {
@@ -40,11 +38,12 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             int SlotNumber = Convert.ToInt32(ActiveSlot.GetComponent<MoveItem>().ParentSlot.gameObject.name.Replace("Slot", "")) - 1;
             int oldID = ItemID;
-            if (CheckType(ActiveSlot.GetComponent<MoveItem>().ItemID))
+            if (ShopItemsPool.ItemByID(ActiveSlot.GetComponent<MoveItem>().ItemID).type == "Belt")
             {
                 ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
-                player.Armor += SIP.ItemsArmor[ItemID];
-                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(SIP.ItemNames[ItemID]);
+                Armor a = (Armor)ShopItemsPool.ItemByID(ItemID);
+                player.Armor += a.armor;
+                transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(ShopItemsPool.ItemByID(ItemID).name);
                 transform.GetChild(1).gameObject.SetActive(true);
                 if (bag.InventorySlots[SlotNumber].GetComponent<InventorySlot>().ItemID == ItemID)
                 {
@@ -81,7 +80,7 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                             {
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemID = oldID;
                                 bag.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(true);
-                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = Sc.LoadImage(bag.SP.ItemNames[oldID]);
+                                bag.InventorySlots[i].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = Sc.LoadImage(ShopItemsPool.ItemByID(oldID).name);
                                 bag.InventorySlots[i].GetComponent<InventorySlot>().ItemCount = 1;
                                 break;
                             }
@@ -96,8 +95,9 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         if (ItemID != -1)
         {
             Description = Instantiate(Inventory.Description, transform.position - new Vector3(82, 0, 0), transform.rotation, transform);
-            Description.transform.GetChild(0).GetComponent<Text>().text = SIP.ItemNames[ItemID];
-            Description.transform.GetChild(1).GetComponent<Text>().text = "Armor: " + SIP.ItemsArmor[ItemID].ToString();
+            Description.transform.GetChild(0).GetComponent<Text>().text = ShopItemsPool.ItemByID(ItemID).name;
+            Armor a = (Armor)ShopItemsPool.ItemByID(ItemID);
+            Description.transform.GetChild(1).GetComponent<Text>().text = "Armor: " + a.armor;
             Active = true;
             StartCoroutine(MoveItem());
         }
@@ -110,46 +110,6 @@ public class EquipSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             Active = false;
             StopCoroutine(MoveItem());
         }
-    }
-    public bool CheckType(int newID)
-    {
-        switch (TypeID)
-        {
-            case 1:
-                {
-                    if (SIP.ISHelmet(newID))
-                    {
-                        return true;     
-                    }
-                    break;
-                }
-            case 2:
-                {
-                    if (SIP.ISBodyArmor(newID))
-                    {
-                        return true;
-                    }
-                    break;
-                }
-            case 3:
-                {
-                    if (SIP.ISGloves(newID))
-                    {
-                        return true;
-                    }
-                    break;
-                }
-            case 5:
-                {
-                    if (SIP.ISBoots(newID))
-                    {
-                        return true;
-                    }
-                    break;
-                }
-            default: return false;
-        }
-        return false;
     }
     public IEnumerator MoveItem()
     {

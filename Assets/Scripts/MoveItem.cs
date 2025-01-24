@@ -14,7 +14,7 @@ public class MoveItem : MonoBehaviour
 
     private void Start()
     {
-        Inv = GameObject.Find("Hud").GetComponent<UIManager>().inv;
+        Inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
     }
     void Update()
     {

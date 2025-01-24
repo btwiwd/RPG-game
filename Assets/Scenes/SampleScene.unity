@@ -671,7 +671,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -2112,7 +2112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: -1
-  SIP: {fileID: 0}
   Description: {fileID: 0}
   Inventory: {fileID: 0}
   TypeID: 2
@@ -2678,7 +2677,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -5375,7 +5374,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -5665,7 +5664,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!1 &329833287
@@ -6270,7 +6268,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -6801,7 +6799,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &439746886
@@ -7430,7 +7427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: -1
-  SIP: {fileID: 0}
   Description: {fileID: 0}
   Inventory: {fileID: 0}
   TypeID: 5
@@ -7578,7 +7574,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &493762788
@@ -8452,7 +8447,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &524862523
@@ -11659,7 +11653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: -1
-  SIP: {fileID: 0}
   Description: {fileID: 0}
   Inventory: {fileID: 0}
   TypeID: 4
@@ -11806,7 +11799,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -12651,7 +12644,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -13222,8 +13215,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 957667018}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+      - m_Target: {fileID: 1665609417}
+        m_TargetAssemblyTypeName: ShopController, Assembly-CSharp
         m_MethodName: WhenBuy
         m_Mode: 1
         m_Arguments:
@@ -14255,7 +14248,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &938132018
@@ -15141,7 +15133,6 @@ GameObject:
   - component: {fileID: 957667015}
   - component: {fileID: 957667014}
   - component: {fileID: 957667018}
-  - component: {fileID: 957667019}
   m_Layer: 5
   m_Name: Hud
   m_TagString: Untagged
@@ -15260,32 +15251,11 @@ MonoBehaviour:
   healthTxT: {fileID: 0}
   Inventory: {fileID: 0}
   WhenBuyText: {fileID: 0}
-  shop: {fileID: 0}
   player: {fileID: 0}
-  inv: {fileID: 0}
   Equipment: {fileID: 0}
   Armor: {fileID: 0}
   hpSlider: {fileID: 0}
   DM: {fileID: 0}
-  Sc: {fileID: 0}
---- !u!114 &957667019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957667013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea8cbbd431e2fa0428fb080318bbd27f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentShop: {fileID: 0}
-  ShopSlots: []
-  BuyButton: {fileID: 0}
-  ActiveSlot: {fileID: 0}
-  PreviousActiveSlot: {fileID: 0}
-  ActiveID: -1
 --- !u!1 &958325653
 GameObject:
   m_ObjectHideFlags: 0
@@ -15690,7 +15660,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -17383,7 +17353,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1054609122
@@ -18030,7 +17999,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1114760292
@@ -18909,7 +18877,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -19371,7 +19339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1197280893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19385,10 +19353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopController: {fileID: 0}
-  Pool: {fileID: 0}
   ItemCount: 0
-  CurrentPrice: 
-  CurrentName: []
   ShopType: Potions
 --- !u!65 &1197280894
 BoxCollider:
@@ -19882,7 +19847,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1247545393
@@ -21798,7 +21762,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!1001 &1350012891
@@ -22166,7 +22129,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -22732,7 +22695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: -1
-  SIP: {fileID: 0}
   Description: {fileID: 0}
   Inventory: {fileID: 0}
   TypeID: 1
@@ -23348,7 +23310,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1463970464
@@ -23467,7 +23428,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1464688386
@@ -23849,7 +23809,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -24779,7 +24739,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1574927683
@@ -26188,7 +26147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665609414}
-  - component: {fileID: 1665609416}
+  - component: {fileID: 1665609417}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -26224,7 +26183,7 @@ RectTransform:
   m_AnchoredPosition: {x: 171, y: -10}
   m_SizeDelta: {x: 220, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1665609416
+--- !u!114 &1665609417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26233,21 +26192,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1665609413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7cecca74cea78c4d952e6889295f381, type: 3}
+  m_Script: {fileID: 11500000, guid: ea8cbbd431e2fa0428fb080318bbd27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemPrices: 0f00000014000000190000000f00000014000000190000000f00000014000000190000000f0000001e00000023000000280000001e00000023000000280000001e00000023000000280000001e000000190000001e00000023000000190000001e00000023000000190000001e00000023000000190000000a0000000f000000140000000a0000000f000000140000000a0000000f000000140000000a0000002d00000032000000370000002d00000032000000370000002d00000032000000370000002d0000000f00000014000000190000000f00000014000000190000000f00000014000000190000000f000000190000001e00000023000000190000001e00000023000000190000001e0000002300000019000000
-  ItemsArmor: 050000000a0000000f000000050000000a0000000f000000050000000a0000000f000000050000000a0000000f000000050000000a0000000f0000000a0000000f00000019000000280000000c000000220000002300000019000000400000000c0000002b000000240000004c0000000c000000200000003600000041000000570000000c000000200000007c00000041000000580000000900000057000000620000000c0000002200000036000000410000004300000057000000610000000c00000017000000220000002d00000038000000430000004e000000590000005a0000007b00000022000000360000004100000017000000330000000c0000002e0000004c0000002b000000170000000c00000020000000
-  PotionPrices: 
-  ItemNames:
-  - Belt_1
-  - Belt_2
-  - Belt_3
-  PotionNames:
-  - Potion_1
-  - Potion_2
-  - Potion_3
-  CurrentItemsCount: 0
+  CurrentShop: {fileID: 0}
+  ShopSlots: []
+  BuyButton: {fileID: 0}
+  ActiveSlot: {fileID: 0}
+  PreviousActiveSlot: {fileID: 0}
+  ActiveID: -1
+  UI: {fileID: 0}
+  player: {fileID: 0}
+  inv: {fileID: 0}
 --- !u!1 &1666815046
 GameObject:
   m_ObjectHideFlags: 0
@@ -27223,7 +27179,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -29115,7 +29071,6 @@ MonoBehaviour:
   - {fileID: 328019228}
   - {fileID: 1054609119}
   - {fileID: 1464688383}
-  SP: {fileID: 1665609416}
   ActiveID: -1
   ActiveSlot: {fileID: 0}
   DragItem: {fileID: 4041703388266212980, guid: 2e0f443e6aed56646bc45572fc0dc533, type: 3}
@@ -29248,7 +29203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: -1
-  SIP: {fileID: 0}
   Description: {fileID: 0}
   Inventory: {fileID: 0}
   TypeID: 3
@@ -30539,7 +30493,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1977552402
@@ -30814,7 +30767,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &1980102787
@@ -31394,7 +31346,6 @@ MonoBehaviour:
   ItemID: -1
   Active: 0
   itemCount: 0
-  SIP: {fileID: 0}
   player: {fileID: 0}
   Sc: {fileID: 0}
 --- !u!114 &2045198060
@@ -31512,7 +31463,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f0228538720e9440ba679a5de553d5e, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
@@ -33505,10 +33456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopController: {fileID: 0}
-  Pool: {fileID: 0}
   ItemCount: 0
-  CurrentPrice: 
-  CurrentName: []
   ShopType: Items
 --- !u!1 &919132149174661149
 GameObject:
