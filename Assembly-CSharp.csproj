@@ -55,9 +55,6 @@
     <UnityVersion>2021.3.33f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\Environment\Scripts\TDControl.cs" />
     <Compile Include="Assets\#NVJOBWaterShadersV2\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />

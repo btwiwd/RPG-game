@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denis\\Documents\\RPG-game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\QuickSlotManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\QuickSlotManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\MoveItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MoveItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItemsPool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopItemsPool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ShopGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EnemySpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemySpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EquipSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EquipSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuickSlotManager.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\QuickSlotManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\QuickSlotManager.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\QuickSlotManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\QuickSlotManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MoveItem.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\MoveItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MoveItem.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\MoveItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MoveItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySlot.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySlot.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShopItem.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopItem.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopItemsPool.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItemsPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopItemsPool.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopItemsPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopItemsPool.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAmwDoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopController.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAIwFwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShopGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShopGenerator.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\ShopGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShopGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawner.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwD4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EquipSlot.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EquipSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EquipSlot.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\EquipSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EquipSlot.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowBQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Slot.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Slot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Slot.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Slot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Slot.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dialoguemanager.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Dialoguemanager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialoguemanager.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Dialoguemanager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialoguemanager.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAuwLMAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\Denis\\Documents\\RPG-game\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:20:31.35Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

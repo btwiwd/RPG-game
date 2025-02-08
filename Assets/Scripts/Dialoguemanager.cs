@@ -92,6 +92,7 @@ public class Dialoguemanager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             DialogueField.enabled = false;
             GameObject.Find("Hud").GetComponent<UIManager>().Buttons.SetActive(false);
+            ShopC.CloseShop();
             Shop.SetActive(false);
          }
          if (ReplicNumber == 2)
@@ -177,13 +178,8 @@ public class Dialoguemanager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             DialogueField.enabled = false;
             GameObject.Find("Hud").GetComponent<UIManager>().Buttons.SetActive(false);
-            //for(int i = 0; i < Shop.GetComponent<ShopItemsPool>().CurrentItemsCount; i++)
-            //{
-                //ShopC.ShopSlots[i].GetComponent<Slot>().DeactivateSlot();
-           // }
-            ShopC.ActiveSlot = null;
             ShopC.PreviousActiveSlot = null;
-            ShopC.ActiveID = -1;
+            ShopC.CloseShop();
             Shop.SetActive(false);
     }
 }

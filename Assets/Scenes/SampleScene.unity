@@ -1316,7 +1316,7 @@ RectTransform:
   - {fileID: 52698526}
   - {fileID: 673656448}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1621,7 +1621,7 @@ RectTransform:
   - {fileID: 1675670755}
   - {fileID: 89157846}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2052,7 +2052,7 @@ RectTransform:
   - {fileID: 905442687}
   - {fileID: 2000641663}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2275,7 +2275,7 @@ RectTransform:
   - {fileID: 1002926225}
   - {fileID: 840774130}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3888,7 +3888,7 @@ RectTransform:
   - {fileID: 1854206829}
   - {fileID: 1649971940}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4195,7 +4195,7 @@ RectTransform:
   - {fileID: 1823410045}
   - {fileID: 643940050}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4448,7 +4448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4798,7 +4798,7 @@ RectTransform:
   - {fileID: 493762786}
   - {fileID: 439746884}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5039,7 +5039,7 @@ RectTransform:
   m_Children:
   - {fileID: 1270281075}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6102,7 +6102,7 @@ RectTransform:
   - {fileID: 1553691478}
   - {fileID: 2062690659}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6656,7 +6656,7 @@ RectTransform:
   - {fileID: 605949801}
   - {fileID: 2114664435}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6751,7 +6751,7 @@ GameObject:
   - component: {fileID: 439746886}
   - component: {fileID: 439746885}
   m_Layer: 5
-  m_Name: Slot10
+  m_Name: QSlot10
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7317,7 +7317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.79622644, g: 0.75566393, b: 0.75566393, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7526,7 +7526,7 @@ GameObject:
   - component: {fileID: 493762788}
   - component: {fileID: 493762787}
   m_Layer: 5
-  m_Name: Slot9
+  m_Name: QSlot9
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8399,7 +8399,7 @@ GameObject:
   - component: {fileID: 524862523}
   - component: {fileID: 524862522}
   m_Layer: 5
-  m_Name: Slot6
+  m_Name: QSlot6
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9025,12 +9025,12 @@ RectTransform:
   m_Children:
   - {fileID: 216692302}
   - {fileID: 501873779}
-  m_Father: {fileID: 1871839316}
-  m_RootOrder: 11
+  m_Father: {fileID: 2065244353}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: -105.17207}
+  m_AnchoredPosition: {x: 35.00004, y: 0}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &550979535
@@ -9084,7 +9084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9140,7 +9140,7 @@ RectTransform:
   - {fileID: 333316583}
   - {fileID: 1946154490}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12773,7 +12773,7 @@ RectTransform:
   m_Children:
   - {fileID: 1117425962}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -12933,7 +12933,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 957667017}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13969,7 +13969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14200,7 +14200,7 @@ GameObject:
   - component: {fileID: 938132018}
   - component: {fileID: 938132017}
   m_Layer: 5
-  m_Name: Slot4
+  m_Name: QSlot4
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14357,7 +14357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14773,7 +14773,7 @@ RectTransform:
   - {fileID: 1979534995}
   - {fileID: 1978562148}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15214,6 +15214,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 770106812}
+  - {fileID: 283844027}
   - {fileID: 1871839316}
   - {fileID: 829706235}
   - {fileID: 85381363}
@@ -15222,7 +15223,6 @@ RectTransform:
   - {fileID: 1658970008}
   - {fileID: 1665609414}
   - {fileID: 841914129}
-  - {fileID: 283844027}
   - {fileID: 887024198}
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -16196,7 +16196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16616,7 +16616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17703,7 +17703,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17856,7 +17856,7 @@ RectTransform:
   - {fileID: 971532406}
   - {fileID: 1048017548}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17951,7 +17951,7 @@ GameObject:
   - component: {fileID: 1114760292}
   - component: {fileID: 1114760291}
   m_Layer: 5
-  m_Name: Slot1
+  m_Name: QSlot1
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18177,7 +18177,7 @@ RectTransform:
   - {fileID: 582092936}
   - {fileID: 1071375196}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18520,7 +18520,7 @@ RectTransform:
   - {fileID: 1139237105}
   - {fileID: 674624942}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19704,7 +19704,7 @@ RectTransform:
   - {fileID: 1499935749}
   - {fileID: 1896020640}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19799,7 +19799,7 @@ GameObject:
   - component: {fileID: 1247545393}
   - component: {fileID: 1247545392}
   m_Layer: 5
-  m_Name: Slot7
+  m_Name: QSlot7
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20200,7 +20200,7 @@ RectTransform:
   - {fileID: 531496044}
   - {fileID: 943646778}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21388,7 +21388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21621,7 +21621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23262,7 +23262,7 @@ GameObject:
   - component: {fileID: 1463970464}
   - component: {fileID: 1463970463}
   m_Layer: 5
-  m_Name: Slot8
+  m_Name: QSlot8
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23631,7 +23631,7 @@ RectTransform:
   - {fileID: 676118032}
   - {fileID: 1744629226}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24291,7 +24291,7 @@ RectTransform:
   - {fileID: 987310270}
   - {fileID: 1007235378}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24691,7 +24691,7 @@ GameObject:
   - component: {fileID: 1574927683}
   - component: {fileID: 1574927682}
   m_Layer: 5
-  m_Name: Slot3
+  m_Name: QSlot3
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25092,7 +25092,7 @@ RectTransform:
   - {fileID: 57828730}
   - {fileID: 161758519}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25904,7 +25904,7 @@ RectTransform:
   - {fileID: 288252586}
   - {fileID: 1683703723}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25942,7 +25942,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 957667017}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -26176,7 +26176,7 @@ RectTransform:
   - {fileID: 2042013069}
   - {fileID: 1025688812}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -28235,7 +28235,7 @@ RectTransform:
   - {fileID: 1960928624}
   - {fileID: 1924814902}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28705,7 +28705,7 @@ RectTransform:
   - {fileID: 902900392}
   - {fileID: 231399588}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28743,7 +28743,7 @@ RectTransform:
   - {fileID: 305032613}
   - {fileID: 854974528}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28982,7 +28982,6 @@ RectTransform:
   - {fileID: 317674013}
   - {fileID: 1475743621}
   - {fileID: 2065244353}
-  - {fileID: 549692369}
   - {fileID: 1965321969}
   - {fileID: 36524304}
   - {fileID: 2116511924}
@@ -29007,7 +29006,7 @@ RectTransform:
   - {fileID: 1837741630}
   - {fileID: 1100374450}
   m_Father: {fileID: 957667017}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -30270,7 +30269,7 @@ RectTransform:
   - {fileID: 1456425282}
   - {fileID: 1191887626}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30719,7 +30718,7 @@ GameObject:
   - component: {fileID: 1980102787}
   - component: {fileID: 1980102786}
   m_Layer: 5
-  m_Name: Slot2
+  m_Name: QSlot2
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30988,7 +30987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8, g: 0.75686276, b: 0.75686276, a: 1}
+  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -31298,7 +31297,7 @@ GameObject:
   - component: {fileID: 2045198060}
   - component: {fileID: 2045198059}
   m_Layer: 5
-  m_Name: Slot5
+  m_Name: QSlot5
   m_TagString: ItemSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32067,6 +32066,7 @@ RectTransform:
   m_Children:
   - {fileID: 614359553}
   - {fileID: 1984305879}
+  - {fileID: 549692369}
   m_Father: {fileID: 1871839316}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32479,7 +32479,7 @@ RectTransform:
   - {fileID: 1873663155}
   - {fileID: 1977339497}
   m_Father: {fileID: 1871839316}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

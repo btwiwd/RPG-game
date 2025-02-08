@@ -17,14 +17,14 @@ public class Slot : MonoBehaviour
     }
     public void Click()
     {
+        if (shop.PreviousActiveSlot != null)
+        {
+            shop.PreviousActiveSlot.GetComponent<Slot>().DeactivateSlot();
+        }
         if (FirstClick)
         {
             transform.GetChild(0).GetComponent<Image>().color = ActiveColor;
             FirstClick = false;
-            if (shop.PreviousActiveSlot != null)
-            {
-                shop.PreviousActiveSlot.GetComponent<Slot>().DeactivateSlot();
-            }
             if (shop.ActiveSlot == null)
             {
                 shop.PreviousActiveSlot = gameObject;

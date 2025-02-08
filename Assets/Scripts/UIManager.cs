@@ -33,12 +33,12 @@ public class UIManager : MonoBehaviour
         WhenBuyText.GetComponent<FadeText>().enabled = false;
         WhenBuyText.GetComponent<Text>().enabled = false;
         Inventory = GameObject.Find("Hud/Inventory");
-        Inventory.SetActive(false);
         Buttons = GameObject.Find("Hud/Dialogue/Buttons");
         Buttons.SetActive(false);
         QuestList = GameObject.Find("Hud/QuestList");
         QuestList.SetActive(false);
         Equipment.SetActive(false);
+        Inventory.SetActive(false);
     }
 
     void Update()

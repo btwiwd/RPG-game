@@ -15,6 +15,10 @@ public class ShopController : MonoBehaviour
     public Player player;
     public Inventory inv;
 
+    private void Awake()
+    {
+        inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
+    }
     void Start()
     {
         for (int i = 0; i < GameObject.Find("Hud/Shop/ShopSlots").transform.childCount; i++)
@@ -24,7 +28,6 @@ public class ShopController : MonoBehaviour
         BuyButton = GameObject.Find("Hud/Shop/Buy");
         UI = GameObject.Find("Hud").GetComponent<UIManager>();
         player = GameObject.Find("Player").GetComponent<Player>();
-        inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
     }
     
     void Update()
@@ -85,6 +88,20 @@ public class ShopController : MonoBehaviour
     {
         return Resources.Load<Sprite>($"ShopSprites/Icons/{name.Substring(0, name.IndexOf('_'))}/{name}");
     }
+
+    public void CloseShop()
+    {
+        for (int i = 0; i < ShopSlots.Count; i++)
+        {
+            if (ShopSlots[i].GetComponent<Slot>().ItemID == ActiveID)
+            {
+                ShopSlots[i].transform.GetChild(0).GetComponent<Image>().color = ShopSlots[i].GetComponent<Slot>().UnActiveColor;
+                ActiveID = -1;
+                ActiveSlot = null;
+                break;
+            }
+        }
+    }
     public void WhenBuy()
     {
         UI.WhenBuyText.GetComponent<FadeText>().enabled = true;
@@ -105,7 +122,7 @@ public class ShopController : MonoBehaviour
                     ShopSlots[i].transform.GetChild(2).GetComponent<Text>().text = CurrentShop.CurrentShop[i].ItemCount.ToString();
                     if (CurrentShop.CurrentShop[i].ItemCount <= 0)
                     {
-                        ShopSlots[i].transform.GetChild(0).GetComponent<Image>().color = ShopSlots[i].GetComponent<Slot>().UnActiveColor; //сделать тоже самое при закрытие магазина
+                        ShopSlots[i].transform.GetChild(0).GetComponent<Image>().color = ShopSlots[i].GetComponent<Slot>().UnActiveColor;
                         ActiveID = -1;
                         ActiveSlot = null;
                     }

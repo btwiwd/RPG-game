@@ -37,66 +37,55 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     void Awake()
     {
-        Sc = GameObject.Find("Hud").GetComponent<ShopController>();
+        Sc = GameObject.Find("Hud/Shop").GetComponent<ShopController>();
         player = GameObject.Find("Player").GetComponent<Player>();
         Inv = GameObject.Find("Hud/Inventory").GetComponent<Inventory>();
     }
     void Update()
     {
-        GameObject ActiveSlot;
+        MoveItem ActiveSlot;
         try
         {
-            ActiveSlot = GameObject.Find("Hud/Inventory/MoveItem").transform.GetChild(0).gameObject;
+            ActiveSlot = GameObject.Find("Hud/Inventory/MoveItem").transform.GetChild(0).gameObject.GetComponent<MoveItem>();
         }
         catch
         {
             ActiveSlot = null;
         }
-        if (ActiveSlot != null && Vector3.Distance(transform.position, ActiveSlot.transform.position) < 15 && Input.GetMouseButtonUp(0) && (ItemID == -1|| ItemID == ActiveSlot.GetComponent<MoveItem>().ItemID))
+        if (ActiveSlot != null && Vector3.Distance(transform.position, ActiveSlot.transform.position) < 15 && Input.GetMouseButtonUp(0) && (ItemID == -1|| ItemID == ActiveSlot.ItemID))
         {
             if (ItemID == -1)
             {
                 ItemCount++;
-                ItemID = ActiveSlot.GetComponent<MoveItem>().ItemID;
+                ItemID = ActiveSlot.ItemID;
                 transform.GetChild(1).GetComponent<Image>().sprite = Sc.LoadImage(ShopItemsPool.ItemByID(ItemID).name);
                 transform.GetChild(1).gameObject.SetActive(true);
             }
-            else if (ActiveSlot.GetComponent<MoveItem>().ItemID == ItemID)
+            else if (ActiveSlot.ItemID == ItemID)
             {
                 ItemCount++;
                 transform.GetChild(2).gameObject.GetComponent<Text>().enabled = true;
-
             }
-            if (ActiveSlot.GetComponent<MoveItem>().IsEquipment)
+            if (ActiveSlot.IsEquipment)
             {
                 Armor a = (Armor)ShopItemsPool.ItemByID(ItemID);
                 player.Armor -= a.armor;
-                ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<EquipSlot>().ItemID = -1;
-                ActiveSlot.GetComponent<MoveItem>().ParentSlot.transform.GetChild(1).gameObject.SetActive(false);
+                ActiveSlot.ParentSlot.GetComponent<EquipSlot>().ItemID = -1;
+                ActiveSlot.ParentSlot.transform.GetChild(1).gameObject.SetActive(false);
             }
-            else if(ActiveSlot.GetComponent<MoveItem>().ParentSlot.name == gameObject.name)
+            else if(ActiveSlot.ParentSlot.name == gameObject.name)
             {
                 ItemCount--;
                 return;
             }
             else
             {
-                for (int i = 0; i < Inv.InventorySlots.Count; i++)
+                ActiveSlot.ParentSlot.GetComponent<InventorySlot>().ItemCount--;
+                if (ActiveSlot.ParentSlot.GetComponent<InventorySlot>().ItemCount <= 0)
                 {
-                    if (ActiveSlot.GetComponent<MoveItem>().ParentSlot == Inv.InventorySlots[i])
-                    {
-                        ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<InventorySlot>().ItemCount--;
-                        if (ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<InventorySlot>().ItemCount <= 1 )
-                        {
-                            ActiveSlot.GetComponent<MoveItem>().ParentSlot.transform.GetChild(2).GetComponent<Text>().enabled = false;
-                            if (ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<InventorySlot>().ItemCount <= 0)
-                            {
-                                ActiveSlot.GetComponent<MoveItem>().ParentSlot.GetComponent<InventorySlot>().ItemID = -1;
-                                Inv.InventorySlots[i].transform.GetChild(1).gameObject.SetActive(false);
-                            }
-                        }
-                        break;
-                    }
+                    ActiveSlot.ParentSlot.GetComponent<InventorySlot>().ItemID = -1;
+                    ActiveSlot.ParentSlot.transform.GetChild(1).gameObject.SetActive(false);
+                    ActiveSlot.ParentSlot.transform.GetChild(2).gameObject.GetComponent<Text>().enabled = false;
                 }
             }
         }
